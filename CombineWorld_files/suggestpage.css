@@ -1,0 +1,94 @@
+.suggestpage-activity {
+  background: #fff;
+  margin: 10px auto 15px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25);
+  display: table;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+}
+.suggestpage-activity .col-1 {
+  width: 40%;
+  float: left;
+  padding: 25px;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(0, 0, 0, 0.07000000000000001);
+  flex-grow: 0;
+}
+.suggestpage-activity .col-1 .product-item-name a {
+  font-size: 1.5rem;
+}
+.suggestpage-activity .cartinfo h3 {
+  margin-top: 0;
+}
+.suggestpage-activity .cartinfo table {
+  margin-bottom: 20px;
+}
+.suggestpage-activity .cartinfo tr th {
+  float: left;
+  padding: 5px 10px;
+}
+.suggestpage-activity .cartinfo tr td {
+  padding: 5px 10px;
+}
+.suggestpage-activity .col-2 {
+  float: right;
+  background: #fafafa;
+  padding: 25px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+.suggestpage-activity .col-2 table {
+  width: 50%;
+}
+.suggestpage-activity .col-suggest-list ol {
+  list-style-type: none;
+  padding: 0 !important;
+  margin-bottom: 0;
+}
+.suggestpage-activity .col-suggest-list ol li {
+  display: flex;
+  flex-direction: row;
+}
+.suggestpage-activity .col-suggest-list ol li:last-child {
+  margin-bottom: 0;
+}
+.suggestpage-activity .product-item-details {
+  width: 100%;
+  padding: 0 10px;
+}
+.suggestpage-activity .suggestpage-qty {
+  float: left;
+  font-size: 1.8rem;
+  line-height: 1em;
+  margin-bottom: 25px;
+}
+.suggestpage-activity .item-options {
+  clear: left;
+  margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  .suggestpage-activity {
+    flex-direction: column;
+  }
+  .suggestpage-activity .col-1 {
+    width: 100%;
+  }
+  .suggestpage-activity .cartinfo .actions button {
+    margin-bottom: 10px;
+  }
+  .suggestpage-activity .col-suggest-list ol li {
+    flex-direction: column;
+  }
+}
+.swissup-suggestpage-index-index .column.main .block,
+.ajaxpro-popup-suggestpage-view .block {
+  margin-top: 30px;
+}
+.swissup-suggestpage-index-index .column.main .block.crosssell,
+.ajaxpro-popup-suggestpage-view .block.crosssell {
+  width: auto;
+  float: none;
+  padding: 0;
+}
