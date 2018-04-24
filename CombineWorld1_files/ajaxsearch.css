@@ -1,0 +1,170 @@
+body.swissup-ajaxsearch-loading .block.block-search {
+  opacity: 0;
+}
+.block-swissup-ajaxsearch input {
+  left: auto;
+}
+.block-swissup-ajaxsearch .action.close {
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.block-swissup-ajaxsearch .twitter-typeahead {
+  width: 100%;
+}
+.block-swissup-ajaxsearch .tt-hint {
+  color: #999;
+}
+.block-swissup-ajaxsearch .loading-mask {
+  left: -45px;
+  width: 20px;
+  height: 20px;
+}
+.block-swissup-ajaxsearch-results {
+  background: #ffffff;
+  min-width: 200px;
+  font-size: 1.3rem;
+}
+.block-swissup-ajaxsearch-results .tt-suggestion {
+  padding: 4px 10px;
+  box-sizing: border-box;
+}
+.block-swissup-ajaxsearch-results .tt-suggestion.tt-cursor,
+.block-swissup-ajaxsearch-results .tt-suggestion:hover {
+  background-color: #fafafa;
+}
+.block-swissup-ajaxsearch-results .no-matches {
+  padding: 4px 10px;
+}
+.block-swissup-ajaxsearch-results .products-list {
+  margin: -1px 0 0;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-height: 550px;
+  overflow-y: auto;
+}
+.block-swissup-ajaxsearch-results .product-item-info {
+  display: table;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: auto;
+}
+.block-swissup-ajaxsearch-results .product-item-info:first-child {
+  border-top: none;
+}
+.block-swissup-ajaxsearch-results .product-item-info:last-child {
+  border-bottom: none;
+}
+.block-swissup-ajaxsearch-results .product-item-info .product-item-photo {
+  padding: 0 10px 0 0;
+}
+.block-swissup-ajaxsearch-results .product-item-info .product-item-photo,
+.block-swissup-ajaxsearch-results .product-item-info .product-item-details {
+  display: table-cell;
+  vertical-align: top;
+}
+@media (min-width: 768px) {
+  .block-swissup-ajaxsearch.folded {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+  }
+  .block-swissup-ajaxsearch.folded .action.close {
+    line-height: 32px;
+    position: absolute;
+    z-index: 1001;
+    top: 30px;
+    right: 30px;
+    font-size: 23px;
+  }
+  .block-swissup-ajaxsearch.folded .action.search {
+    right: 5px;
+  }
+  .block-swissup-ajaxsearch.folded .action.search:before {
+    font-size: 19px;
+  }
+  .block-swissup-ajaxsearch.folded .field.search {
+    z-index: 1000;
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  .block-swissup-ajaxsearch.folded .field.search .control {
+    opacity: 0;
+  }
+  .block-swissup-ajaxsearch.folded.zoom-in .field.search .control {
+    transform: scale3d(1.05, 1.3, 1.3);
+  }
+  .block-swissup-ajaxsearch.folded.slide-down .field.search .control {
+    transform: translate3d(0, -80%, 0);
+  }
+  .block-swissup-ajaxsearch.folded.shown {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  .block-swissup-ajaxsearch.folded.shown .action.search {
+    display: none;
+  }
+  .block-swissup-ajaxsearch.folded.shown .action.close {
+    transition: opacity 500ms ease-in-out;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    overflow: visible;
+  }
+  .block-swissup-ajaxsearch.folded.shown .field.search {
+    padding: 30px 30px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .block-swissup-ajaxsearch.folded.shown .field.search .control {
+    opacity: 1;
+    transition: opacity 200ms ease-in-out, transform 100ms ease-in-out;
+  }
+  .block-swissup-ajaxsearch.folded.shown.zoom-in .field.search .control {
+    transform: scale3d(1, 1, 1);
+  }
+  .block-swissup-ajaxsearch.folded.shown.slide-down .field.search .control {
+    transform: translate3d(0, 0, 0);
+  }
+  .block-swissup-ajaxsearch .ajaxsearch-mask {
+    transition: opacity 200ms ease-in-out;
+    opacity: 0;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 999;
+  }
+  .block-swissup-ajaxsearch .ajaxsearch-mask.shown {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 767px) {
+  .block-swissup-ajaxsearch .minisearch .inactive {
+    display: none;
+  }
+  .block-swissup-ajaxsearch-results {
+    width: 100%;
+  }
+  .block-swissup-ajaxsearch-results .product-item-info {
+    width: 100%;
+  }
+}

@@ -1,0 +1,114 @@
+#askit-new-question-form {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  clear: both;
+}
+.askit-item {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  padding: 15px 15px 0 80px;
+  margin: 0 0 50px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+}
+.no-avatar .askit-item {
+  padding-left: 15px;
+}
+.askit-item-avatar {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 50px;
+  width: 50px;
+}
+.no-avatar .askit-item-avatar {
+  display: none;
+}
+.askit-item-author {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.askit-item-timestamp {
+  margin: 0 0 10px;
+}
+.askit-item-same {
+  color: #444444;
+  font-size: .9em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.askit-item-vote {
+  color: #aaaaaa;
+  display: block;
+  margin-bottom: 10px;
+}
+.askit-item-actions {
+  height: 40px;
+  width: calc(100% + 80px + 15px);
+  margin-left: -80px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.no-avatar .askit-item-actions {
+  width: calc(100% + 15px + 15px);
+  margin-left: -15px;
+}
+.askit-item-actions .askit-item-trigger {
+  line-height: 40px;
+  text-align: center;
+  padding: 0 10px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  color: #797979;
+  cursor: pointer;
+}
+.askit-item-answer {
+  padding-bottom: 15px;
+  margin: 0;
+  box-shadow: none;
+}
+.askit-item-answers {
+  display: none;
+  padding: 15px;
+}
+.askit-item-answer-avatar {
+  height: 35px;
+  width: 35px;
+  left: 35px;
+  top: 20px;
+}
+.no-avatar .askit-item-answer-avatar {
+  display: none;
+}
+.askit-item-answer-same {
+  color: #aaaaaa;
+  font-size: .9em;
+}
+.askit-item-answer .askit-item-vote {
+  margin: 0;
+}
+.askit-item--commenting .askit-item-actions {
+  height: initial;
+}
+.askit-item--commenting .askit-item-answers {
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.askit-answer-form {
+  padding: 15px 15px 0 80px;
+  position: relative;
+}
+.no-avatar .askit-answer-form {
+  padding-left: 15px;
+}
+.askit-answer-form textarea {
+  height: 150px;
+}
+.askit-toolbar {
+  margin-bottom: 10px;
+  text-align: right;
+}
+.askit-toolbar .toolbar-amount {
+  position: static;
+}
