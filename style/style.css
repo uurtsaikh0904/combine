@@ -1,0 +1,159 @@
+h1{
+  color: #fff;
+  font-size: 1.8rem;
+}
+h2{
+  color: #fff;
+  font-size: 1.6rem;
+}
+.fixed-top{
+  height: 60px;
+  top: 30px;
+}
+.navbar-brand {
+  position: absolute;
+  z-index: 100;
+  left: 99px;
+  top: -30px;
+}
+.navbar-brand img{
+  width: 350px;
+  height: auto;
+}
+.relative{
+  position: relative;
+  width: 100%;
+}
+.bg-dark{
+  background: rgba(94,0,13,.75) !important;
+}
+.bg-brown{
+  background: #5e000d;
+}
+.splash-bar{
+  position: absolute;
+  
+  top: 50%;
+  left: 0;
+  height: 260px;
+  z-index: 100;
+  width: 100%;
+  margin-top: 0;
+}
+.bg-left{
+  background: rgba(94,0,13,.85) !important;
+  height: 200px;
+}
+.bg-right{
+  background: rgba(255,171,0,.85) !important;
+  height: 200px;
+}
+
+.bor-shar{
+  display: inline-block;
+  border:3px solid rgba(255,171,0,.85);
+}
+.bor-huren{
+  display: inline-block;
+  border:3px solid rgba(94,0,13,.85);
+}
+.container-x{
+  max-width: 100%;
+  padding: 0;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  z-index: 120;
+}
+.carousel-caption{
+  bottom: 50%;
+  z-index: 110;
+}
+footer{
+  font-size: 13px;
+}
+.text-xs-center { text-align: center; }
+.boxing{ margin-top: 40px;}
+.marginger{
+  margin-top: -25px;
+}
+
+.b-l{
+  border-left: 1px solid #ffff;
+}
+.mobile-card{
+  position: absolute;
+  width: 100%;
+  top: 140px;
+  z-index: 110;
+}
+.card{
+  background: rgba(94,0,13,.75) !important;
+  text-align: center;
+}
+.card-title{
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.card-body{
+  padding: 0.4rem;
+  
+}
+.carousel-control-next, .carousel-control-prev{
+  display: none !important;
+}
+.bg-right-mobi{
+  background: rgba(255,171,0,.85) !important;
+}
+.boxing .btn-out{
+  display: block;
+}
+.btn-secondary{
+  background:rgba(29, 0, 4,.9);
+  border: rgb(29, 0, 4);
+  text-transform: uppercase;
+}
+.btn-secondary:hover{
+  background:rgba(29, 0, 4, 0.9);
+}
+.btn-secondary:not([disabled]):not(.disabled).active, .btn-secondary:not([disabled]):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+  background:rgba(29, 0, 4, 0.9);
+  box-shadow: 0 0 0 0.2rem rgba(68, 0, 11, 0.5)
+}
+.dropdown-menu .oi{
+  font-size: 14px;
+  color:#ffab00
+}
+.card-img-top{
+  max-width: 200px;
+  height: auto;
+  
+}
+.topp{
+  padding-top: 10px!important;
+}
+.vtop{
+  margin-top: 5px!important;
+}
+.boxing img{
+  max-width: 235px;
+  height: auto;
+}
+.marginger img{
+  max-width: 330px;
+  width: 330px;
+  height: auto;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 780px){
+  .navbar-brand {
+    left: 50%;
+    margin-left: -175px;
+    top:-70px;
+  }
+}
