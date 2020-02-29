@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<body lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="description" content="Combine World is the #1 choice for agricultural equipment & parts sales. We carry combines, tractors, headers, seeders, sprayers, and sell new & used parts for John Deere, Case NH, Agco, Claas/Lexion, MacDon, Willmar/Rogator. Export is our specialty."/>
@@ -10,9 +10,8 @@
     <link href="./style/bootstrap.min.css" rel="stylesheet">
     <link href="./style/full-slider.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
-<link  rel="icon" type="image/x-icon" href="https://equipment.combineworld.com/pub/media/favicon/stores/11/cw-logo-back.jpg" />
-<link  rel="shortcut icon" type="image/x-icon" href="https://equipment.combineworld.com/pub/media/favicon/stores/11/cw-logo-back.jpg" />
+    <link  rel="icon" type="image/x-icon" href="https://equipment.combineworld.com/pub/media/favicon/stores/11/cw-logo-back.jpg" />
+    <link  rel="shortcut icon" type="image/x-icon" href="https://equipment.combineworld.com/pub/media/favicon/stores/11/cw-logo-back.jpg" />
     <link href="./style/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="all" href="./style/styles-m.css">
     <style>
@@ -46,24 +45,24 @@
         .bg-dark {
             background: transparent !important;
         }
-
-        .navbar-brand {
-
+        footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
         }
     </style>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113579254-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113579254-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-113579254-1');
-</script>
-
-
+    gtag('config', 'UA-113579254-1');
+    </script>
 </head>
-
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-x">
@@ -75,11 +74,10 @@
 </nav>
 <div class="splash-bar d-none d-sm-none d-md-block d-lg-block">
     <div class="container-x">
-       
         <!--- PARTS START -->
         <div class="row none" id="part_id" style="display: flex;">
             <div class="col-sm-6 text-xs-center bg-left">
-                <div class="boxing marginger">
+                <div class="boxing marginger" id="box-1">
                     <a href="https://newparts.combineworld.com/" class="bor-huren"><img
                             src="./main/img/new-parts.jpg"></a>
                     <div class="btn-out vtop">
@@ -92,7 +90,7 @@
                 </div>
             </div>
             <div class="col-sm-6 text-xs-center bg-right">
-                <div class="boxing marginger">
+                <div class="boxing marginger" id="box-2">
                     <a href="https://usedparts.combineworld.com/" class="bor-shar"><img
                             src="./main/img/used-parts.jpg"></a>
                     <div class="btn-out vtop">
@@ -186,9 +184,30 @@
         </a>
     </div>
 </header>
-<footer class="py-2 bg-brown">
+<footer class="bg-brown">
     <div class="container">
-        <p class="m-0 text-center text-white">© 2008-2018 CombineWorld.com. All rights reserved.</p>
+        <div class="py-2 ">
+            <p class="m-0 text-center text-white">© 2008-2018 CombineWorld.com. All rights reserved.</p>
+        </div>
     </div>
 </footer>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $( "#box-1" ).effect( 'slide', { direction: "left" }, 800, callback );
+        $( "#box-2" ).effect( 'slide', { direction: "right" }, 800, callback2 );
+    });
+    function callback() {
+      setTimeout(function() {
+        $( "#box-1" ).effect( 'bounce', 1000 );
+      }, 100 );
+    };
+    function callback2() {
+      setTimeout(function() {
+        $( "#box-2" ).effect( 'bounce', 1000 );
+      }, 500 );
+    };
+    </script>
+</body>
 </html>
