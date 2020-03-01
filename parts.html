@@ -115,16 +115,16 @@
         <!-- PARTS END -->
     </div>
 </div>
-
+<!-- FOR MOBILE -->
 <div class="mobile-card d-sm-block d-md-none d-lg-none">
     <div class="container">
         <!-- EQUIPMENT START -->
         <div class="row" id="eq_id_mob">
             <div class="col-sm-12 col-md-4 text-xs-center">
                 <div class="card topp">
-                    <a href="https://newparts.combineworld.com/"><img class="card-img-top" src="./main/img/new-parts.jpg" alt="New Parts"></a>
+                    <a href="https://newparts.combineworld.com/" id="mob-box-1"><img class="card-img-top" src="./main/img/new-parts.jpg" alt="New Parts"></a>
                     <div class="card-body">
-                        <div class="btn-out">
+                        <div class="btn-out" id="mobile-title-1">
                             <a class="btn btn-secondary" href="https://newparts.combineworld.com/">
                                 New Parts
                             </a>
@@ -132,11 +132,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 text-xs-center  mt-2">
+            <div class="col-sm-12 col-md-4 text-xs-center mt-2">
                 <div class="card topp bg-right-mobi">
-                    <a class="parts_click_mob" href="https://usedparts.combineworld.com"><img class="card-img-top" src="./main/img/used-parts.jpg" alt="Used Parts"></a>
+                    <a class="parts_click_mob" id="mob-box-2" href="https://usedparts.combineworld.com"><img class="card-img-top" src="./main/img/used-parts.jpg" alt="Used Parts"></a>
                     <div class="card-body">
-                        <div class="btn-out">
+                        <div class="btn-out" id="mobile-title-2">
                             <a class="btn btn-secondary parts_click_mob" href="https://usedparts.combineworld.com">
                               Used Parts
                             </a>
@@ -195,17 +195,23 @@
 <script src="./js/jquery-ui.min.js"></script>
 <script>
     $(document).ready(function(){
-        $( "#box-1" ).effect( 'slide', { direction: "right" }, 800, callback );
-        $( "#box-2" ).effect( 'slide', { direction: "left" }, 800, callback2 );
+        $( "#box-1" ).effect( 'slide', { direction: "right" }, 800, callback("#box-1")  );
+        $( "#box-2" ).effect( 'slide', { direction: "left" }, 800, callback2("#box-2") );
+
+        $( "#mob-box-1" ).effect( 'slide', { direction: "left" }, 800, callback("#mob-box-1") );
+        $( "#mob-box-2" ).effect( 'slide', { direction: "right" }, 800, callback2("#mob-box-2") );
+
+        $( "#mobile-title-1" ).effect( 'slide', { direction: "left" }, 1200);
+        $( "#mobile-title-2" ).effect( 'slide', { direction: "right" }, 1200);
     });
-    function callback() {
+    function callback(element) {
       setTimeout(function() {
-        $( "#box-1" ).effect( 'bounce', 1000 );
+        $( element ).effect( 'bounce', 1000 );
       }, 100 );
     };
-    function callback2() {
+    function callback2(element) {
       setTimeout(function() {
-        $( "#box-2" ).effect( 'bounce', 1000 );
+        $( element ).effect( 'bounce', 1000 );
       }, 500 );
     };
     </script>
