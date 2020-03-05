@@ -1,3 +1,7 @@
+html{
+  margin: 0;
+  padding: 0;
+}
 h1{
   color: #fff;
   font-size: 1.8rem;
@@ -150,10 +154,50 @@ footer{
   display: block;
   margin: 0 auto;
 }
-@media (max-width: 780px){
+.m-l-0{
+  margin-left: 0;
+} 
+.m-r-0{
+  margin-right: 0;
+}
+.cwi-phone{
+  z-index: 1040;
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  background: rgba(29, 0, 4,.84);
+  padding: 8px;
+  opacity: 1;
+}
+.cwi-phone a{
+  color: #ffff;
+  font-weight: 700;
+  font-size: 18px;
+}
+.cwi-phone a:hover{
+  color: #ffff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px){
+  .cwi-phone{
+    top: 90px;
+    right: 15px;
+  }
+  
+}
+@media only screen and (min-width: 0px) and (max-width: 768px){
+  .navbar-brand img{
+    width: 300px;
+  }
   .navbar-brand {
     left: 50%;
-    margin-left: -175px;
+    margin-left: -150px;
     top:-70px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .navbar-brand {
+    left: 20px;
+    top: -70px;
   }
 }
