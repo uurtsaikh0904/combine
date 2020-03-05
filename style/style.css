@@ -88,7 +88,7 @@ footer{
 .mobile-card{
   position: absolute;
   width: 100%;
-  top: 140px;
+  top: 190px;
   z-index: 110;
 }
 .card{
@@ -177,9 +177,12 @@ footer{
 .cwi-phone a:hover{
   color: #ffff;
 }
+.mt-20{
+  margin-top: 20px;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px){
   .cwi-phone{
-    top: 90px;
+    top: 130px;
     right: 15px;
   }
   
