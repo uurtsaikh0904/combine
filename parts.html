@@ -56,6 +56,14 @@
             display: block;
             width: 100%;
         }
+
+        a.smaller-number {
+            font-size: 1.1em;
+            /* Adjust as needed */
+        }
+        .phone-number {
+            margin-top: 20px;
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113579254-1"></script>
@@ -86,10 +94,26 @@
     </div>
 </nav>
 <div class="cwi-phone">
-    <a href="tel:1-800-667-4515">
-        <i class="fa fa-phone" aria-hidden="true"></i>
-        1-800-667-4515
-    </a>
+    <div>
+        <a href="tel:1-800-667-4515">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            1-800-667-4515
+        </a>
+    </div>
+    <div class="phone-number">
+        <div style="color:white"> After Hours / Emergency:</div>
+        <a href="sms:1-306-380-2282" class="smaller-number">
+            <i class="fa fa-comment" aria-hidden="true"></i>
+            306-380-2282
+        </a>
+    </div>
+    <div>
+        <div style="color:white"> or:</div>
+        <a href="sms:1-306-250-8839" class="smaller-number">
+            <i class="fa fa-comment" aria-hidden="true"></i>
+            306-250-8839
+        </a>
+    </div>
 </div>
 <div class="splash-bar d-none d-sm-none d-md-block d-lg-block">
     <div class="container-x">
